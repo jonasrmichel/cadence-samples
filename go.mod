@@ -14,9 +14,9 @@ require (
 	github.com/gogo/googleapis v1.3.0 // indirect
 	github.com/gogo/status v1.1.0 // indirect
 	github.com/golang/mock v1.3.1-0.20190508161146-9fa652df1129
-	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/google/uuid v1.1.1 // indirect
 	github.com/jessevdk/go-flags v1.4.0 // indirect
+	github.com/kelseyhightower/envconfig v1.4.0 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/opentracing/opentracing-go v1.1.0 // indirect
 	github.com/pborman/uuid v0.0.0-20180906182336-adf5a7427709
@@ -51,7 +51,8 @@ require (
 	golang.org/x/sys v0.0.0-20190712062909-fae7ac547cb7 // indirect
 	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4 // indirect
 	golang.org/x/tools v0.0.0-20190712213246-8b927904ee0d // indirect
-	google.golang.org/grpc v1.23.1 // indirect
+	google.golang.org/grpc v1.30.0
+	google.golang.org/grpc/examples v0.0.0-20200714235929-a6c3c6968e90 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gopkg.in/yaml.v2 v2.2.2
 )

@@ -27,6 +27,7 @@ PROGS = helloworld \
 	cancelactivity \
 	ctxpropagation \
 	pso \
+	grpc \
 
 TEST_ARG ?= -race -v -timeout 5m
 BUILD := ./build
@@ -58,6 +59,7 @@ TEST_DIRS=./cmd/samples/cron \
 	./cmd/samples/recipes/searchattributes \
 	./cmd/samples/recovery \
 	./cmd/samples/pso \
+	./cmd/samples/recipes/grpc \
 
 
 cancelactivity:
@@ -129,6 +131,9 @@ recovery:
 pso:
 	go build -i -o bin/pso cmd/samples/pso/*.go
 
+grpc:
+	go build -i -o bin/grpc cmd/samples/recipes/grpc/*.go
+
 bins: helloworld \
 	branch \
 	childworkflow \
@@ -151,6 +156,7 @@ bins: helloworld \
 	recovery \
 	ctxpropagation \
 	pso \
+	grpc \
 
 test: bins
 	@rm -f test
